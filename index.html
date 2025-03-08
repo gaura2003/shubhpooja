@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrologer Booking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-purple-700 via-indigo-800 to-blue-900 text-white">
+    
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-black bg-opacity-70 backdrop-blur-md py-4 px-6 flex justify-between items-center z-50">
+        <h1 class="text-2xl font-bold">🔮 Astro Pooja</h1>
+        <a href="#contact" class="px-6 py-2 bg-yellow-500 hover:bg-yellow-600 rounded-full text-lg">Book Now</a>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="relative h-screen w-full overflow-hidden flex items-center justify-center text-center">
+        <video autoplay loop muted class="absolute w-full h-full object-cover">
+            <source src="your-video.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white p-6">
+            <h1 class="text-5xl font-bold fade-in">Book a Pooja Online with Expert Astrologers</h1>
+            <p class="text-lg mt-4 fade-in">Get personalized rituals & spiritual guidance.</p>
+            <a href="#services" class="mt-6 px-6 py-3 bg-yellow-500 hover:bg-yellow-600 rounded-full text-lg fade-in">Explore Services</a>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="py-16 text-center">
+        <h2 class="text-4xl font-bold fade-in">🔱 Our Services</h2>
+        <div class="grid md:grid-cols-3 gap-6 mt-8 p-6">
+            <div class="p-6 bg-gradient-to-r from-yellow-500 to-orange-600 rounded-lg fade-in shadow-lg">
+                <h3 class="text-xl font-semibold">💍 Marriage Pooja</h3>
+                <p>Find the perfect partner & ensure a happy married life.</p>
+            </div>
+            <div class="p-6 bg-gradient-to-r from-green-500 to-teal-600 rounded-lg fade-in shadow-lg">
+                <h3 class="text-xl font-semibold">💰 Health & Wealth Pooja</h3>
+                <p>Attract prosperity and maintain good health.</p>
+            </div>
+            <div class="p-6 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-lg fade-in shadow-lg">
+                <h3 class="text-xl font-semibold">🌙 Navgraha Pooja</h3>
+                <p>Balance planetary influences for a peaceful life.</p>
+            </div>
+            <div class="p-6 bg-gradient-to-r from-red-500 to-pink-600 rounded-lg fade-in shadow-lg">
+                <h3 class="text-xl font-semibold">🪔 Diwali Pooja</h3>
+                <p>Invite wealth & prosperity this festive season.</p>
+            </div>
+            <div class="p-6 bg-gradient-to-r from-blue-500 to-cyan-600 rounded-lg fade-in shadow-lg">
+                <h3 class="text-xl font-semibold">🙏 Shanti Pooja</h3>
+                <p>Attain inner peace and spiritual bliss.</p>
+            </div>
+            <div class="p-6 bg-gradient-to-r from-yellow-600 to-orange-700 rounded-lg fade-in shadow-lg">
+                <h3 class="text-xl font-semibold">📿 Rudrabhishek Pooja</h3>
+                <p>Seek Lord Shiva's blessings for success.</p>
+            </div>
+            <div class="p-6 bg-gradient-to-r from-indigo-600 to-violet-700 rounded-lg fade-in shadow-lg">
+                <h3 class="text-xl font-semibold">🕉️ Grah Dosh Pooja</h3>
+                <p>Remove negative planetary influences.</p>
+            </div>
+            <div class="p-6 bg-gradient-to-r from-teal-600 to-green-700 rounded-lg fade-in shadow-lg">
+                <h3 class="text-xl font-semibold">📖 Saraswati Pooja</h3>
+                <p>Gain wisdom & excel in academics.</p>
+            </div>
+            <div class="p-6 bg-gradient-to-r from-pink-600 to-red-700 rounded-lg fade-in shadow-lg">
+                <h3 class="text-xl font-semibold">🔆 Kaal Sarp Dosh Pooja</h3>
+                <p>Neutralize the effects of Kaal Sarp Dosh.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Form -->
+    <section id="contact" class="py-16 text-center">
+        <h2 class="text-4xl font-bold fade-in">📩 Contact Us</h2>
+        <form class="mt-8 max-w-lg mx-auto bg-gray-900 p-6 rounded-lg shadow-md fade-in" action="https://formspree.io/f/mpwpakqp" method="POST">
+            <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 border rounded bg-gray-800 text-white">
+            <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 border rounded bg-gray-800 text-white">
+            <input type="tel" placeholder="Your Phone" class="w-full p-3 mb-4 border rounded bg-gray-800 text-white">
+            <select class="w-full p-3 mb-4 border rounded bg-gray-800 text-white">
+                <option>Select a Service</option>
+                <option>Marriage Pooja</option>
+                <option>Health & Wealth Pooja</option>
+                <option>Navgraha Pooja</option>
+                <option>Diwali Pooja</option>
+                <option>Shanti Pooja</option>
+                <option>Rudrabhishek Pooja</option>
+                <option>Grah Dosh Pooja</option>
+                <option>Saraswati Pooja</option>
+                <option>Kaal Sarp Dosh Pooja</option>
+            </select>
+            <textarea placeholder="Your Message" class="w-full p-3 mb-4 border rounded bg-gray-800 text-white"></textarea>
+            <button class="px-6 py-3 bg-yellow-500 hover:bg-yellow-600 rounded-full text-lg">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
